@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
     <title>secret message app</title>
 </head>
 
 <body>
     <div class="row">
         <div class="col s8 offset-s2">
-            <div class="card-panel">
+            <div id="message_show" class="card-panel hide">
+                <h2></h2>
+                <div>
+                    <a href="/index.html">Create your secret message</a>
+                </div>
+            </div>
+            <div id="message_form" class="card-panel">
 
                 <form action="">
                     <label for="">Enter a secret message</label>
-                    <input type="text">
+                    <input type="text" id="message_input">
                     <button class="btn">Create Message</button>
                 </form>
 
+            </div>
+            <div id="link_form" class="card-panel hide">Share this link with your friend
+                <input type="text" id="link_input">
             </div>
 
 
